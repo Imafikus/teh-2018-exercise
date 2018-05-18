@@ -35,7 +35,7 @@ y = 0.0
 x_coords = []
 y_coords = []
 
-
+#main loop
 while(t_curr <= float(num_secs)):
     x_coords.append(x)
     y_coords.append(y)
@@ -44,11 +44,11 @@ while(t_curr <= float(num_secs)):
     y += vy_curr * CONST_DELTA_T
   
     vx_curr = calc_curr_vx(vx_curr)
-    print(vy_curr)
     vy_curr = calc_curr_vy(vy_curr)
 
     t_curr += CONST_DELTA_T
 
+#plot graph
 plt.plot(x_coords, y_coords, 'r')
 plt.show()
     
